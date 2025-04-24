@@ -5,7 +5,7 @@ int angle = 0;
 
 void setup() {
   Serial.begin(9600);
-  myServo.attach(9); // Servo signal connected to D9
+  myServo.attach(9);
   Serial.println("Timestamp(ms),Angle,Speed");
 }
 
