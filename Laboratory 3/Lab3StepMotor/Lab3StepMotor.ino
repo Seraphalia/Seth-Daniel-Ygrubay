@@ -7,7 +7,7 @@ Stepper myStepper(stepsPerRevolution, 8, 10, 9, 11); // 1,3,2,4 order
 
 void setup() {
   Serial.begin(9600);
-  delay(2000); // Give serial monitor time to connect
+  delay(2000); 
   Serial.println("Timestamp (ms)\tTimestamp (s)\tDirection\tSpeed (RPM)");
 }
 
@@ -48,6 +48,4 @@ void loop() {
   myStepper.step(-stepsPerRevolution);
   delay(2000);
 
-  // Stop after one loop
-  while (true);
 }
