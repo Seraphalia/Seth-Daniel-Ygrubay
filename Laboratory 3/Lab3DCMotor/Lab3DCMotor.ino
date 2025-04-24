@@ -1,4 +1,3 @@
-// DC Motor via L298N
 const int ENA = 10;     // PWM pin for speed control
 const int IN1 = 8;      // Direction pin
 const int IN2 = 9;      // Direction pin
@@ -18,10 +17,10 @@ void logData(String direction, int speed) {
 
   t = millis();
   Serial.print(t);
-  Serial.print(",");         // Comma
+  Serial.print(",");  
   Serial.print(direction);
   Serial.print(",");
-  Serial.println(speed);     // End with newline
+  Serial.println(speed);
 }
 
 
